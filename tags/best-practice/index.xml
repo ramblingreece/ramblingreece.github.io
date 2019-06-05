@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>best practice on Rambling Reece</title>
+    <link>https://ramblingreece.co.uk/tags/best-practice/</link>
+    <description>Recent content in best practice on Rambling Reece</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Reece Campbell</copyright>
+    <lastBuildDate>Wed, 30 May 2018 14:28:16 +0000</lastBuildDate>
+    
+	<atom:link href="https://ramblingreece.co.uk/tags/best-practice/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fiddler, XrmToolBox, VS Code and VueJS: A fantastic combination</title>
+      <link>https://ramblingreece.co.uk/2018/05/30/fiddler-xrmtoolbox-vs-code-and-vuejs-a-fantastic-combination/</link>
+      <pubDate>Wed, 30 May 2018 14:28:16 +0000</pubDate>
+      
+      <guid>https://ramblingreece.co.uk/2018/05/30/fiddler-xrmtoolbox-vs-code-and-vuejs-a-fantastic-combination/</guid>
+      <description>In this post I will show, very quickly, a set of tools and process that is working well for me while developing client side apps for Dynamics 365. This is just one way but some of the tools and how I use them should be something you can take away and implement in whatever you do for you development of Web Resources within the CRM.
+A few years ago I remember coming across a great blog post from Scott Durow (@scottdurow), he of SparkleXRM and Ribbon Workbench fame, which introduced me to Fiddler2 autoresponders for replacing CRM web resources on the server with local development copies to vastly improve the development process and speed.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/2014/09/creating-a-new-theme/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/tags/crm-portal/</loc>
+    <lastmod>2018-09-19T16:33:52+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/categories/</loc>
+    <lastmod>2018-09-19T16:33:52+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/categories/dynamics-365-portals/</loc>
+    <lastmod>2018-09-19T16:33:52+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/categories/dynamics-crm/</loc>
+    <lastmod>2018-09-19T16:33:52+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/2018/09/19/entity-form-custom-validation-on-submit-button/</loc>
+    <lastmod>2018-09-19T16:33:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/</loc>
+    <lastmod>2018-09-19T16:33:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/post/</loc>
+    <lastmod>2018-09-19T16:33:52+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/tags/</loc>
+    <lastmod>2018-09-19T16:33:52+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/categories/development/</loc>
+    <lastmod>2018-09-19T16:33:52+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/tags/javascript/</loc>
+    <lastmod>2018-09-19T16:33:52+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/2018/05/30/fiddler-xrmtoolbox-vs-code-and-vuejs-a-fantastic-combination/</loc>
+    <lastmod>2018-05-30T14:28:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/tags/best-practice/</loc>
+    <lastmod>2018-05-30T14:28:16+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/tags/featured/</loc>
+    <lastmod>2018-05-30T14:28:16+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/tags/vuejs/</loc>
+    <lastmod>2018-05-30T14:28:16+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/tags/web-resources/</loc>
+    <lastmod>2018-05-30T14:28:16+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/2018/05/20/hidden-does-not-mean-secure/</loc>
+    <lastmod>2018-05-20T18:40:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/tags/customisation/</loc>
+    <lastmod>2018-05-20T18:40:40+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/tags/security/</loc>
+    <lastmod>2018-05-20T18:40:40+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/tags/tips/</loc>
+    <lastmod>2018-05-20T18:40:40+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/tags/adx-portals/</loc>
+    <lastmod>2017-02-18T18:46:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/2017/02/18/dynamics-365-portals-useful-resources/</loc>
+    <lastmod>2017-02-18T18:46:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/tags/reference/</loc>
+    <lastmod>2017-02-18T18:46:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/tags/resources/</loc>
+    <lastmod>2017-02-18T18:46:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/2017/01/10/publish-changes-to-crm-portals/</loc>
+    <lastmod>2017-01-10T17:49:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/tags/dynamics-365/</loc>
+    <lastmod>2017-01-10T17:49:19+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/tags/dynamics-crm/</loc>
+    <lastmod>2017-01-10T17:49:19+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/tags/errors/</loc>
+    <lastmod>2017-01-06T16:39:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/tags/field-services/</loc>
+    <lastmod>2017-01-06T16:39:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/2017/01/06/field-services-schedule-board-unknown-error/</loc>
+    <lastmod>2017-01-06T16:39:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/tags/project-service-automation/</loc>
+    <lastmod>2017-01-06T16:39:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/2016/12/20/ecmascript-2015-es6javascript-ish-is-here-time-to-use-it/</loc>
+    <lastmod>2016-12-20T14:41:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/categories/ramble/</loc>
+    <lastmod>2016-12-20T14:41:29+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/categories/ramblingreece/</loc>
+    <lastmod>2016-12-20T14:41:29+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/tags/ecmascript/</loc>
+    <lastmod>2016-12-20T14:41:29+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/tags/react/</loc>
+    <lastmod>2016-12-20T14:41:29+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/2016/12/15/dynamics-365-has-a-site-map-editor/</loc>
+    <lastmod>2016-12-15T10:25:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/tags/improvement/</loc>
+    <lastmod>2016-12-15T10:25:13+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/tags/sitemap/</loc>
+    <lastmod>2016-12-15T10:25:13+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/about/</loc>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/1/01/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

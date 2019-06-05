@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Rambling Reece</title>
+    <link>https://ramblingreece.co.uk/categories/</link>
+    <description>Recent content in Categories on Rambling Reece</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Reece Campbell</copyright>
+    <lastBuildDate>Wed, 19 Sep 2018 16:33:52 +0000</lastBuildDate>
+    
+	<atom:link href="https://ramblingreece.co.uk/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dynamics 365 Portals</title>
+      <link>https://ramblingreece.co.uk/categories/dynamics-365-portals/</link>
+      <pubDate>Wed, 19 Sep 2018 16:33:52 +0000</pubDate>
+      
+      <guid>https://ramblingreece.co.uk/categories/dynamics-365-portals/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dynamics CRM</title>
+      <link>https://ramblingreece.co.uk/categories/dynamics-crm/</link>
+      <pubDate>Wed, 19 Sep 2018 16:33:52 +0000</pubDate>
+      
+      <guid>https://ramblingreece.co.uk/categories/dynamics-crm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>development</title>
+      <link>https://ramblingreece.co.uk/categories/development/</link>
+      <pubDate>Wed, 19 Sep 2018 16:33:52 +0000</pubDate>
+      
+      <guid>https://ramblingreece.co.uk/categories/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ramble</title>
+      <link>https://ramblingreece.co.uk/categories/ramble/</link>
+      <pubDate>Tue, 20 Dec 2016 14:41:29 +0000</pubDate>
+      
+      <guid>https://ramblingreece.co.uk/categories/ramble/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RamblingReece</title>
+      <link>https://ramblingreece.co.uk/categories/ramblingreece/</link>
+      <pubDate>Tue, 20 Dec 2016 14:41:29 +0000</pubDate>
+      
+      <guid>https://ramblingreece.co.uk/categories/ramblingreece/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
