@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Rambling Reece</title>
+    <link>https://ramblingreece.co.uk/post/</link>
+    <description>Recent content in Posts on Rambling Reece</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Reece Campbell</copyright>
+    <lastBuildDate>Wed, 19 Sep 2018 16:33:52 +0000</lastBuildDate>
+    
+	<atom:link href="https://ramblingreece.co.uk/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://ramblingreece.co.uk/2014/09/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://ramblingreece.co.uk/2014/09/creating-a-new-theme/</guid>
+      <description> Introduction </description>
+    </item>
+    
+    <item>
+      <title>Entity Form Custom Validation on Submit Button</title>
+      <link>https://ramblingreece.co.uk/2018/09/19/entity-form-custom-validation-on-submit-button/</link>
+      <pubDate>Wed, 19 Sep 2018 16:33:52 +0000</pubDate>
+      
+      <guid>https://ramblingreece.co.uk/2018/09/19/entity-form-custom-validation-on-submit-button/</guid>
+      <description>The documentation for Dynamics Portals currently only has an example for adding custom validation to the submit button on a form if you are adding that to a step in a Web Form, but what if you want to add validation to the button on an Entity Form? Read on to find out more.
+Recently I had a requirement to modify some field values in a portal entity form at the point the submit button is clicked and I had come across the javascript to do this before so I dutifully plodded along to https://docs.</description>
+    </item>
+    
+    <item>
+      <title>Fiddler, XrmToolBox, VS Code and VueJS: A fantastic combination</title>
+      <link>https://ramblingreece.co.uk/2018/05/30/fiddler-xrmtoolbox-vs-code-and-vuejs-a-fantastic-combination/</link>
+      <pubDate>Wed, 30 May 2018 14:28:16 +0000</pubDate>
+      
+      <guid>https://ramblingreece.co.uk/2018/05/30/fiddler-xrmtoolbox-vs-code-and-vuejs-a-fantastic-combination/</guid>
+      <description>In this post I will show, very quickly, a set of tools and process that is working well for me while developing client side apps for Dynamics 365. This is just one way but some of the tools and how I use them should be something you can take away and implement in whatever you do for you development of Web Resources within the CRM.
+A few years ago I remember coming across a great blog post from Scott Durow (@scottdurow), he of SparkleXRM and Ribbon Workbench fame, which introduced me to Fiddler2 autoresponders for replacing CRM web resources on the server with local development copies to vastly improve the development process and speed.</description>
+    </item>
+    
+    <item>
+      <title>Hidden does not mean secure</title>
+      <link>https://ramblingreece.co.uk/2018/05/20/hidden-does-not-mean-secure/</link>
+      <pubDate>Sun, 20 May 2018 18:40:40 +0000</pubDate>
+      
+      <guid>https://ramblingreece.co.uk/2018/05/20/hidden-does-not-mean-secure/</guid>
+      <description>If you have ever had to customise an entity form in Dynamics 365 then you will likely have hidden a field, marked a field as business required and possibly even made a field read-only. Did you know however that all of these can be reverse by most users? Just because the field is not visible on the form does not mean the user cannot find the value or edit it.</description>
+    </item>
+    
+    <item>
+      <title>Dynamics 365 Portals - Useful Resources</title>
+      <link>https://ramblingreece.co.uk/2017/02/18/dynamics-365-portals-useful-resources/</link>
+      <pubDate>Sat, 18 Feb 2017 18:46:30 +0000</pubDate>
+      
+      <guid>https://ramblingreece.co.uk/2017/02/18/dynamics-365-portals-useful-resources/</guid>
+      <description>Now that every Dynamics CRM Enterprise license comes with a CRM Portal as standard it is a good thing to get to know, not to mention it is an incredibly powerful and useful addition to an already great platform.
+This post attempts to capture all of the useful references I have found to date for learning how to implement portals.The references included in this post relate to the latest version of CRM Portals which is provided with Dynamics 365 and therefore is not available to on-premise versions and does not include the ability to develop new web pages in .</description>
+    </item>
+    
+    <item>
+      <title>Publish changes to CRM Portals</title>
+      <link>https://ramblingreece.co.uk/2017/01/10/publish-changes-to-crm-portals/</link>
+      <pubDate>Tue, 10 Jan 2017 17:49:19 +0000</pubDate>
+      
+      <guid>https://ramblingreece.co.uk/2017/01/10/publish-changes-to-crm-portals/</guid>
+      <description>A new feature of Dynamics 365 is the ability to add a Web Portal for access to the CRM by way of a web front end. This is a modified form of the ADX Studio Portals project bought by Microsoft previously and can be enabled directly in the Office 365 admin portal and configured via the CRM and website (with the correct user role assigned).It is a great new addition and has huge potential as a useful addition to most CRM implementations.</description>
+    </item>
+    
+    <item>
+      <title>Field Services Schedule Board - Unknown Error</title>
+      <link>https://ramblingreece.co.uk/2017/01/06/field-services-schedule-board-unknown-error/</link>
+      <pubDate>Fri, 06 Jan 2017 16:39:05 +0000</pubDate>
+      
+      <guid>https://ramblingreece.co.uk/2017/01/06/field-services-schedule-board-unknown-error/</guid>
+      <description>Error messages can be useful but some are downright useless! This one is an example of the latter but a more useful error later led me to the solution. If you have seen the error above on loading the Schedule Board then read on for a possible solution.I tend to ramble so below I have listed the steps I took to fix the problem and below that is the full story.</description>
+    </item>
+    
+    <item>
+      <title>ECMAScript 2015 (ES6)(JavaScript-ish) is here, time to use it</title>
+      <link>https://ramblingreece.co.uk/2016/12/20/ecmascript-2015-es6javascript-ish-is-here-time-to-use-it/</link>
+      <pubDate>Tue, 20 Dec 2016 14:41:29 +0000</pubDate>
+      
+      <guid>https://ramblingreece.co.uk/2016/12/20/ecmascript-2015-es6javascript-ish-is-here-time-to-use-it/</guid>
+      <description>It&amp;rsquo;s true, the title of this post is a little odd. But then, the history of JavaScript is too. Recently I have been trying to get a better understanding of the web technologies out there and how I can use them within the CRM or standalone projects. This has inevitably led me to the realisation that I am woefully out of date.I will not discuss the history of JavaScript and ECMAScript here as you can find out more at the linked wikipedia articles; the point is that ECMAScript is the standard that JavaScript tracks.</description>
+    </item>
+    
+    <item>
+      <title>Dynamics 365 has a Site Map editor!</title>
+      <link>https://ramblingreece.co.uk/2016/12/15/dynamics-365-has-a-site-map-editor/</link>
+      <pubDate>Thu, 15 Dec 2016 10:25:13 +0000</pubDate>
+      
+      <guid>https://ramblingreece.co.uk/2016/12/15/dynamics-365-has-a-site-map-editor/</guid>
+      <description>Long has it been a crazy thing that the only way to edit the Site Map has been to export a solution with the SiteMap XML included and then hand edit that to your needs (as in the title image). This pain caused the birth of a number of tools to make this process easier (XrmToolBox being the most popular) but nothing officially released from Microsoft to support their own product; that is, until now.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ramblingreece.co.uk/1/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ramblingreece.co.uk/1/01/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

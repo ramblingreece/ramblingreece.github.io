@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>customisation on Rambling Reece</title>
+    <link>https://ramblingreece.co.uk/tags/customisation/</link>
+    <description>Recent content in customisation on Rambling Reece</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Reece Campbell</copyright>
+    <lastBuildDate>Sun, 20 May 2018 18:40:40 +0000</lastBuildDate>
+    
+	<atom:link href="https://ramblingreece.co.uk/tags/customisation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hidden does not mean secure</title>
+      <link>https://ramblingreece.co.uk/2018/05/20/hidden-does-not-mean-secure/</link>
+      <pubDate>Sun, 20 May 2018 18:40:40 +0000</pubDate>
+      
+      <guid>https://ramblingreece.co.uk/2018/05/20/hidden-does-not-mean-secure/</guid>
+      <description>If you have ever had to customise an entity form in Dynamics 365 then you will likely have hidden a field, marked a field as business required and possibly even made a field read-only. Did you know however that all of these can be reverse by most users? Just because the field is not visible on the form does not mean the user cannot find the value or edit it.</description>
+    </item>
+    
+    <item>
+      <title>Dynamics 365 has a Site Map editor!</title>
+      <link>https://ramblingreece.co.uk/2016/12/15/dynamics-365-has-a-site-map-editor/</link>
+      <pubDate>Thu, 15 Dec 2016 10:25:13 +0000</pubDate>
+      
+      <guid>https://ramblingreece.co.uk/2016/12/15/dynamics-365-has-a-site-map-editor/</guid>
+      <description>Long has it been a crazy thing that the only way to edit the Site Map has been to export a solution with the SiteMap XML included and then hand edit that to your needs (as in the title image). This pain caused the birth of a number of tools to make this process easier (XrmToolBox being the most popular) but nothing officially released from Microsoft to support their own product; that is, until now.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dynamics 365 Portals on Rambling Reece</title>
+    <link>https://ramblingreece.co.uk/categories/dynamics-365-portals/</link>
+    <description>Recent content in Dynamics 365 Portals on Rambling Reece</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2019 Reece Campbell</copyright>
+    <lastBuildDate>Wed, 19 Sep 2018 16:33:52 +0000</lastBuildDate>
+    
+	<atom:link href="https://ramblingreece.co.uk/categories/dynamics-365-portals/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Entity Form Custom Validation on Submit Button</title>
+      <link>https://ramblingreece.co.uk/2018/09/19/entity-form-custom-validation-on-submit-button/</link>
+      <pubDate>Wed, 19 Sep 2018 16:33:52 +0000</pubDate>
+      
+      <guid>https://ramblingreece.co.uk/2018/09/19/entity-form-custom-validation-on-submit-button/</guid>
+      <description>The documentation for Dynamics Portals currently only has an example for adding custom validation to the submit button on a form if you are adding that to a step in a Web Form, but what if you want to add validation to the button on an Entity Form? Read on to find out more.
+Recently I had a requirement to modify some field values in a portal entity form at the point the submit button is clicked and I had come across the javascript to do this before so I dutifully plodded along to https://docs.</description>
+    </item>
+    
+    <item>
+      <title>Dynamics 365 Portals - Useful Resources</title>
+      <link>https://ramblingreece.co.uk/2017/02/18/dynamics-365-portals-useful-resources/</link>
+      <pubDate>Sat, 18 Feb 2017 18:46:30 +0000</pubDate>
+      
+      <guid>https://ramblingreece.co.uk/2017/02/18/dynamics-365-portals-useful-resources/</guid>
+      <description>Now that every Dynamics CRM Enterprise license comes with a CRM Portal as standard it is a good thing to get to know, not to mention it is an incredibly powerful and useful addition to an already great platform.
+This post attempts to capture all of the useful references I have found to date for learning how to implement portals.The references included in this post relate to the latest version of CRM Portals which is provided with Dynamics 365 and therefore is not available to on-premise versions and does not include the ability to develop new web pages in .</description>
+    </item>
+    
+  </channel>
+</rss>
