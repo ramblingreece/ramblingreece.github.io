@@ -43,3 +43,6 @@ body {
 figure>img {
     width: 100%;
 }
+.highlight {
+    width: 1000px;
+}

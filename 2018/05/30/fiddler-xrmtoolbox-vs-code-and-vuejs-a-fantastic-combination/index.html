@@ -131,7 +131,7 @@ A few years ago I remember coming across a great blog post from Scott Durow (@sc
 
 <p class="article-meta">
     <div class="article-meta-container">
-        <div class="article-meta-author-name">onlyreece</div>
+        <div class="article-meta-author-name">Reece</div>
         <div class="article-meta-description"></div>
     </div>
     <span class="article-meta-published-at grey-text text-darken-1">May 30, 2018</span>
@@ -150,36 +150,50 @@ A few years ago I remember coming across a great blog post from Scott Durow (@sc
 
 <p>The tools I use for this:</p>
 
-<pre><code>  * [Visual Studio Code](https://code.visualstudio.com/): This is an open source IDE/Editor from Microsoft based on the fantastic Atom editor. It is my editor of choice for anything javascript.
-  * [XrmToolBox](https://www.xrmtoolbox.com/): If you are working in Dynamics 365 in a technical role of any kind then you should be using this admin tool. Fact. In this article I am using the Web Resources Manager plugin.
-  * [Fiddler](https://www.telerik.com/fiddler): An excellent multi-purpose tool for debugging the web and developing anything that communicates with another machine. Like XrmToolBox, everyone should have this and I used it to troubleshoot the issue with the Schedule Board in my post: [Field Services Schedule Board – Unknown Error](http://xrmtechie.com/2017/01/06/field-services-schedule-board-unknown-error/).
-  * [VueJS](https://vuejs.org/): Not really a tool but has a CLI (Command Line Interface) build tool that transpiles your app for you. VueJS is a javascript framework to build apps with.
-</code></pre>
+<ol>
+<li><a href="https://code.visualstudio.com/">Visual Studio Code</a>: This is an open source IDE/Editor from Microsoft based on the fantastic Atom editor. It is my editor of choice for anything javascript.</li>
+<li><a href="https://www.xrmtoolbox.com/">XrmToolBox</a>: If you are working in Dynamics 365 in a technical role of any kind then you should be using this admin tool. Fact. In this article I am using the Web Resources Manager plugin.</li>
+<li><a href="https://www.telerik.com/fiddler">Fiddler</a>: An excellent multi-purpose tool for debugging the web and developing anything that communicates with another machine. Like XrmToolBox, everyone should have this and I used it to troubleshoot the issue with the Schedule Board in my post: <a href="http://xrmtechie.com/2017/01/06/field-services-schedule-board-unknown-error/">Field Services Schedule Board – Unknown Error</a>.</li>
+<li><a href="https://vuejs.org/">VueJS</a>: Not really a tool but has a CLI (Command Line Interface) build tool that transpiles your app for you. VueJS is a javascript framework to build apps with.</li>
+</ol>
 
 <p>The aim of the steps below is to show how I have setup my environment to develop a VueJS app for the CRM quickly and using a modern tool chain.</p>
 
-<pre><code>  1. Create a VueJS app and build it, the output files look a little like the below:![App Output](https://glinkssite.files.wordpress.com/2018/05/app-output.png)
+<ol>
+<li><p>Create a VueJS app and build it, the output files look a little like the below:
+<img src="/uploads/app-output.png" alt="Visual Studio Code file output" /></p></li>
 
-  2. Using the excellent Web Resources Manager in XrmToolBox you can create the right folder structure for the web resources in the CRM, this is quicker and easier to do here than in the CRM directly:
-</code></pre>
+<li><p>Using the excellent Web Resources Manager in XrmToolBox you can create the right folder structure for the web resources in the CRM, this is quicker and easier to do here than in the CRM directly:
+<img src="/uploads/web-resources-manager.png" alt="Web Resources Manager" /></p></li>
 
-<p><img src="https://glinkssite.files.wordpress.com/2018/05/web-resources-manager.png" alt="Web Resources Manager" /></p>
+<li><p>Update the web resources all at once by updating the files based on path as seen below, the trick is that your app web resources are named within a folder structure related to that app, holidays in this case. This really is a great feature as it allows you to update all files that match the same folder structure and naming in CRM from the local folder:
+<figure>
+    <img src="/uploads/web-resources-manager2.png"
+         alt="Web Resources Manager"/> <figcaption>
+            <p>Web Resources Manager</p>
+        </figcaption>
+</figure>
+</p></li>
 
-<pre><code>  3. Update the web resources all at once by updating the files based on path as seen below, the trick is that your app web resources are named within a folder structure related to that app, holidays in this case. This really is a great feature as it allows you to update all files that match the same folder structure and naming in CRM from the local folder:
-</code></pre>
+<li><p>Setup Fiddler with a single autoresponder instead of individual rules for each file. In the image here you will see the first entry is the new RegEx rule used to replace all of the other rules here. This rule will match any file requested on the server in the path of WebResources/xt_/holidays/ and replaces the request with any local file in the matched path (dist). :
+<figure>
+    <img src="/uploads/fiddler2.png"
+         alt="Fiddler AutoResponders"/> <figcaption>
+            <p>Fiddler AutoResponders</p>
+        </figcaption>
+</figure>
+</p></li>
 
-<p><img src="https://glinkssite.files.wordpress.com/2018/05/web-resources-manager2.png" alt="Web Resources Manager" /></p>
+<li><p>Navigate to the CRM to see your app in place:</p></li>
+</ol>
 
-<pre><code>  4. Setup Fiddler with a single autoresponder instead of individual rules for each file. In the image here you will see the first entry is the new RegEx rule used to replace all of the other rules here. This rule will match any file requested on the server in the path of WebResources/xt_/holidays/ and replaces the request with any local file in the matched path (dist\). :
-</code></pre>
+<figure>
+    <img src="/uploads/holiday-board.png"
+         alt="The custom application embedded in the Dynamics 365 interface."/> <figcaption>
+            <p>The custom application embedded in the Dynamics 365 interface.</p>
+        </figcaption>
+</figure>
 
-<p><img src="https://glinkssite.files.wordpress.com/2018/05/fiddler2.png" alt="Fiddler2" /></p>
-
-<pre><code>  5. Navigate to the CRM to see your app in place:
-</code></pre>
-
-<p>[caption id=&ldquo;attachment_330&rdquo; align=&ldquo;alignnone&rdquo; width=&ldquo;916&rdquo;]<img src="https://glinkssite.files.wordpress.com/2018/05/holiday-board.png" alt="Holiday Board" />
-The custom application embedded in the Dynamics 365 interface.[/caption]</p>
 
 <p>A bit of a round-the-houses post but hopefully it is easy enough to follow to be useful but certainly the plan is to follow this up in a more detailed series of posts covering each step.</p>
 
@@ -187,10 +201,11 @@ The custom application embedded in the Dynamics 365 interface.[/caption]</p>
 
 <p>Reference Posts of Note:</p>
 
-<pre><code>  * [https://develop1.net/public/post/2014/04/15/Fiddler2-The-tool-that-gives-you-Superpowers-Part-2](https://develop1.net/public/post/2014/04/15/Fiddler2-The-tool-that-gives-you-Superpowers-Part-2): An update of the original post I remember.
-  * [http://journeyintocrm.com/archives/862](http://journeyintocrm.com/archives/862): Good post on Fiddler and how to setup.
-  * [https://crmbusiness.wordpress.com/2014/09/23/getting-started-with-fiddler-and-crm/](https://crmbusiness.wordpress.com/2014/09/23/getting-started-with-fiddler-and-crm/): More detail on Fiddler and setups.
-</code></pre>
+<ol>
+<li><a href="https://develop1.net/public/post/2014/04/15/Fiddler2-The-tool-that-gives-you-Superpowers-Part-2">https://develop1.net/public/post/2014/04/15/Fiddler2-The-tool-that-gives-you-Superpowers-Part-2</a>: An update of the original post I remember.</li>
+<li><a href="http://journeyintocrm.com/archives/862">http://journeyintocrm.com/archives/862</a>: Good post on Fiddler and how to setup.</li>
+<li><a href="https://crmbusiness.wordpress.com/2014/09/23/getting-started-with-fiddler-and-crm/">https://crmbusiness.wordpress.com/2014/09/23/getting-started-with-fiddler-and-crm/</a>: More detail on Fiddler and setups.</li>
+</ol>
 
         </div>
     </section>

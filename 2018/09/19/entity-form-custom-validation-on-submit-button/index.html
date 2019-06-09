@@ -131,7 +131,7 @@ Recently I had a requirement to modify some field values in a portal entity form
 
 <p class="article-meta">
     <div class="article-meta-container">
-        <div class="article-meta-author-name">onlyreece</div>
+        <div class="article-meta-author-name">Reece</div>
         <div class="article-meta-description"></div>
     </div>
     <span class="article-meta-published-at grey-text text-darken-1">Sep 19, 2018</span>
@@ -144,59 +144,53 @@ Recently I had a requirement to modify some field values in a portal entity form
 
 <p>Recently I had a requirement to modify some field values in a portal entity form at the point the submit button is clicked and I had come across the javascript to do this before so I dutifully plodded along to <a href="https://docs.microsoft.com">https://docs.microsoft.com</a> to try and find it. The only thing I could find was the code below (<a href="https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/add-custom-javascript">Add Custom Javascript</a>):</p>
 
-<p>[code language=&ldquo;javascript&rdquo;]
-if (window.jQuery) {</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">if</span> (window.<span style="color:#a6e22e">jQuery</span>) {
 
-<pre><code>(function ($) {
-    if (typeof (webFormClientValidate) != 'undefined') {
-        var originalValidationFunction = webFormClientValidate;
-        if (originalValidationFunction &amp;&amp; typeof (originalValidationFunction) == &quot;function&quot;) {
+    (<span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">$</span>) {
+        <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> (<span style="color:#a6e22e">webFormClientValidate</span>) <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#39;undefined&#39;</span>) {
+            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">originalValidationFunction</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">webFormClientValidate</span>;
+            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">originalValidationFunction</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#66d9ef">typeof</span> (<span style="color:#a6e22e">originalValidationFunction</span>) <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;function&#34;</span>) {
 
-            webFormClientValidate = function () {
-                originalValidationFunction.apply(this, arguments);
-                // do your custom validation here
-                // return false;
-                // to prevent the form submit you need to return false
-                // end custom validation.
-
-                return true;
-            };
+                <span style="color:#a6e22e">webFormClientValidate</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () {
+                    <span style="color:#a6e22e">originalValidationFunction</span>.<span style="color:#a6e22e">apply</span>(<span style="color:#66d9ef">this</span>, <span style="color:#a6e22e">arguments</span>);
+                    <span style="color:#75715e">// do your custom validation here
+</span><span style="color:#75715e"></span>                    <span style="color:#75715e">// return false;
+</span><span style="color:#75715e"></span>                    <span style="color:#75715e">// to prevent the form submit you need to return false
+</span><span style="color:#75715e"></span>                    <span style="color:#75715e">// end custom validation.
+</span><span style="color:#75715e"></span>
+                    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+                };
+            }
         }
-    }
-}(window.jQuery));
-</code></pre>
-
-<p>}
-[/code]</p>
+    }(window.<span style="color:#a6e22e">jQuery</span>));
+}
+</code></pre></div>
 
 <p>Having stuck this into the the Custom JavaScript field on the Entity Form and refreshed my page I was then getting errors about the webFormClientValidate being undefined.</p>
 
 <p>Turns out, that on an Entity Form the exact same code works but only if you replace the webFormClientValidate with entityFormClientValidate as below.</p>
 
-<p>[code language=&ldquo;javascript&rdquo;]
-if (window.jQuery) {</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">if</span> (window.<span style="color:#a6e22e">jQuery</span>) {
 
-<pre><code>(function ($) {
-    if (typeof (entityFormClientValidate) !== 'undefined') {
-        var originalValidationFunction = entityFormClientValidate;
-        if (originalValidationFunction &amp;&amp; typeof (originalValidationFunction) === &quot;function&quot;) {
+    (<span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">$</span>) {
+        <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> (<span style="color:#a6e22e">entityFormClientValidate</span>) <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#39;undefined&#39;</span>) {
+            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">originalValidationFunction</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">entityFormClientValidate</span>;
+            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">originalValidationFunction</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#66d9ef">typeof</span> (<span style="color:#a6e22e">originalValidationFunction</span>) <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;function&#34;</span>) {
 
-            entityFormClientValidate = function () {
-                originalValidationFunction.apply(this, arguments);
-                // do your custom validation here
-                // return false;
-                // to prevent the form submit you need to return false
-                // end custom validation.
-
-                return true;
-            };
+                <span style="color:#a6e22e">entityFormClientValidate</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () {
+                    <span style="color:#a6e22e">originalValidationFunction</span>.<span style="color:#a6e22e">apply</span>(<span style="color:#66d9ef">this</span>, <span style="color:#a6e22e">arguments</span>);
+                    <span style="color:#75715e">// do your custom validation here
+</span><span style="color:#75715e"></span>                    <span style="color:#75715e">// return false;
+</span><span style="color:#75715e"></span>                    <span style="color:#75715e">// to prevent the form submit you need to return false
+</span><span style="color:#75715e"></span>                    <span style="color:#75715e">// end custom validation.
+</span><span style="color:#75715e"></span>
+                    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+                };
+            }
         }
-    }
-}(window.jQuery));
-</code></pre>
-
-<p>}
-[/code]</p>
+    }(window.<span style="color:#a6e22e">jQuery</span>));
+}
+</code></pre></div>
 
 <p>This was a relatively obvious one but I ended up spending much more time on it than I expected so hopefully it saves someone out there some time.</p>
 

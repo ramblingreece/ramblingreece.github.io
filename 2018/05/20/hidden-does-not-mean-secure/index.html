@@ -129,7 +129,7 @@
 
 <p class="article-meta">
     <div class="article-meta-container">
-        <div class="article-meta-author-name">onlyreece</div>
+        <div class="article-meta-author-name">Reece</div>
         <div class="article-meta-description"></div>
     </div>
     <span class="article-meta-published-at grey-text text-darken-1">May 20, 2018</span>
@@ -142,43 +142,52 @@
 
 <p>Here we can see a very simple account form customisation where there is a field required and also a field that is read-only. There is also a field between these that is not visible by default. Take a look at the 2 screenshots below and you will see the difference.</p>
 
-<p>[caption id=&ldquo;attachment_318&rdquo; align=&ldquo;aligncenter&rdquo; width=&ldquo;420&rdquo;]<img src="https://glinkssite.files.wordpress.com/2018/05/custom_account_fields.png" alt="Account form with Required field and Read-only field visible" />
-A simple account entity form customised to make a field required, one hidden and one read-only[/caption]</p>
+<figure>
+    <img src="/uploads/custom_account_fields.png"
+         alt="A simple account entity form customised to make a field required, one hidden and one read-only"/> <figcaption>
+            <p>A simple account entity form customised to make a field required, one hidden and one read-only</p>
+        </figcaption>
+</figure>
 
-<p>[caption id=&ldquo;attachment_319&rdquo; align=&ldquo;aligncenter&rdquo; width=&ldquo;376&rdquo;]<img src="https://glinkssite.files.wordpress.com/2018/05/custom_account_fields_after.png" alt="Custom fields are now visible, editable and not required" />
-Custom fields are now not required, read-only or hidden[/caption]</p>
 
-<p>What happened?!</p>
+<p><figure>
+    <img src="/uploads/custom_account_fields_after.png"
+         alt="Custom fields are now not required, read-only or hidden"/> <figcaption>
+            <p>Custom fields are now not required, read-only or hidden</p>
+        </figcaption>
+</figure>
+
+What happened?!</p>
 
 <p>You must always remember that the Dynamics system is simply a series of web pages and with modern browsers and a little know-how any user can run the code below to undo your hard work.</p>
 
-<pre><code>&lt;code&gt;// Show all fields
-for (var i = 0; i &lt; frames.length; i++) {
-  try {
-    frames[i].Xrm.Page.ui.controls.forEach(function(control, i) {
-      control.setVisible(true);
-    });
-  } catch (e) {  }
-}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">  <span style="color:#75715e">// Show all fields
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">frames</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+    <span style="color:#66d9ef">try</span> {
+      <span style="color:#a6e22e">frames</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">Xrm</span>.<span style="color:#a6e22e">Page</span>.<span style="color:#a6e22e">ui</span>.<span style="color:#a6e22e">controls</span>.<span style="color:#a6e22e">forEach</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">control</span>, <span style="color:#a6e22e">i</span>) {
+        <span style="color:#a6e22e">control</span>.<span style="color:#a6e22e">setVisible</span>(<span style="color:#66d9ef">true</span>);
+      });
+    } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">e</span>) {  }
+  }
 
-// Make all fields editable
-for (var i = 0; i &lt; frames.length; i++) {
-  try {
-    frames[i].Xrm.Page.ui.controls.forEach(function(control, i) {
-      control.setDisabled(false);
-    });
-  } catch (e) {  }
-}
+  <span style="color:#75715e">// Make all fields editable
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">frames</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+    <span style="color:#66d9ef">try</span> {
+      <span style="color:#a6e22e">frames</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">Xrm</span>.<span style="color:#a6e22e">Page</span>.<span style="color:#a6e22e">ui</span>.<span style="color:#a6e22e">controls</span>.<span style="color:#a6e22e">forEach</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">control</span>, <span style="color:#a6e22e">i</span>) {
+        <span style="color:#a6e22e">control</span>.<span style="color:#a6e22e">setDisabled</span>(<span style="color:#66d9ef">false</span>);
+      });
+    } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">e</span>) {  }
+  }
 
-// Mark all fields as optional
-for (var i = 0; i &lt; frames.length; i++) {
-  try {
-    frames[i].Xrm.Page.data.entity.attributes.forEach(function(attribute, i) {
-      attribute.setRequiredLevel('none');
-    });
-  } catch (e) {  }
-}&lt;/code&gt;
-</code></pre>
+  <span style="color:#75715e">// Mark all fields as optional
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">frames</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+    <span style="color:#66d9ef">try</span> {
+      <span style="color:#a6e22e">frames</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">Xrm</span>.<span style="color:#a6e22e">Page</span>.<span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">entity</span>.<span style="color:#a6e22e">attributes</span>.<span style="color:#a6e22e">forEach</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">attribute</span>, <span style="color:#a6e22e">i</span>) {
+        <span style="color:#a6e22e">attribute</span>.<span style="color:#a6e22e">setRequiredLevel</span>(<span style="color:#e6db74">&#39;none&#39;</span>);
+      });
+    } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">e</span>) {  }
+  }
+</code></pre></div>
 
 <p>Try it yourself, open a form in Dynamics and copy + paste this code into the browser tools console (F12 for most browsers).</p>
 
