@@ -144,16 +144,19 @@
 
 <p>In trying to find more details I stumbled across the answer from Patrick Dykema on the Dynamics CRM Forums (<a href="https://community.dynamics.com/crm/f/117/p/210500/599644">https://community.dynamics.com/crm/f/117/p/210500/599644</a>). This article is based on the steps he outlines with a little more detail, so thanks go to Patrick for this!</p>
 
-<blockquote>**Update 18/02/2017** - This article is still relevant, though it is not recommended by Microsoft any longer. The new process to update changes is actually by enabling Change Tracking on the relevant entity as noted in this support blog article - [Portal Troubleshooting, Part One: Stale Data and Bad Requests](https://community.dynamics.com/enterprise/b/dynamics365portalssupport/archive/2017/01/19/portal-troubleshooting-part-one-stale-data-and-bad-requests).</blockquote>
+<blockquote>
+<p><strong>Update 18/02/2017</strong> - This article is still relevant, though it is not recommended by Microsoft any longer. The new process to update changes is actually by enabling Change Tracking on the relevant entity as noted in this support blog article - <a href="https://community.dynamics.com/enterprise/b/dynamics365portalssupport/archive/2017/01/19/portal-troubleshooting-part-one-stale-data-and-bad-requests">Portal Troubleshooting, Part One: Stale Data and Bad Requests</a>.</p>
+</blockquote>
 
 <h2 id="quick-fix-steps">Quick Fix Steps</h2>
 
-<pre><code>  1. Open the CRM solution called Web Notification (Settings &gt; Solutions).
-  2. Create a Web Notification URL record if required. This should have the URL of your portal (https://portalname.microsoftcrmportals.com for Microsoft hosted) with the path /WebNotification.axd added; for example https://portalname.microsoftcrmportals.com/WebNotification.axd.
-  3. Return to the Web Notification Solution and refresh the page to see the Notification Configuration page.
-  4. Select any entity you want to force a refresh, during Portal development it is easiest to select any entity that is related to ADX/Portals functionality; basically anything beginning Web and the Entity List and Entity Form.
-  5. Removal of these notifications can be actioned by performing these same steps in reverse.
-</code></pre>
+<ol>
+<li>Open the CRM solution called Web Notification (Settings &gt; Solutions).</li>
+<li>Create a Web Notification URL record if required. This should have the URL of your portal (<a href="https://portalname.microsoftcrmportals.com">https://portalname.microsoftcrmportals.com</a> for Microsoft hosted) with the path /WebNotification.axd added; for example <a href="https://portalname.microsoftcrmportals.com/WebNotification.axd">https://portalname.microsoftcrmportals.com/WebNotification.axd</a>.</li>
+<li>Return to the Web Notification Solution and refresh the page to see the Notification Configuration page.</li>
+<li>Select any entity you want to force a refresh, during Portal development it is easiest to select any entity that is related to ADX/Portals functionality; basically anything beginning Web and the Entity List and Entity Form.</li>
+<li>Removal of these notifications can be actioned by performing these same steps in reverse.</li>
+</ol>
 
 <h2 id="detailed-steps">Detailed Steps</h2>
 
@@ -161,19 +164,30 @@
 
 <p>There is an inherent cost in performance to enabling this as the plugin will fire for all operations on all entities selected in this process. Exactly how much of a cost is not clear but it is worth mentioning and noting that only entities that need to provide the latest data in the portal and are likely to change in the CRM regularly too. For the purposes of this article we will enable relevant ADX entities to update the portal as we make changes.</p>
 
-<p>To begin we need to open the Web Notification solution in the CRM, this is added by default when installing a CRM Portal.</p>
-
-<p><img src="https://glinkssite.files.wordpress.com/2017/01/webnotification-solution-pre-url.png" alt="WebNotification Solution pre URL.png" /></p>
+<p>To begin we need to open the Web Notification solution in the CRM, this is added by default when installing a CRM Portal.
+<figure>
+    <img src="/uploads/webnotification-solution-pre-url.png"
+         alt="Web Notification solution configuration"/> <figcaption>
+            <p>Web Notification solution configuration</p>
+        </figcaption>
+</figure>
+</p>
 
 <p>As above it is likely you will not already have a Web Notification URL record in the system so follow the link to add a new record. This is simply a new entity record so create a new record as normal.</p>
 
-<p>The Name can be anything but the URL must be the default URL of the portal with the path /WebNotification.axd added to the end. An example URL would be: <a href="https://myportalname.com/WebNotification.axd">https://myportalname.com/WebNotification.axd</a>.</p>
+<p>The Name can be anything but the URL must be the default URL of the portal with the path /WebNotification.axd added to the end. An example URL would be: <code>https://myportalname.com/WebNotification.axd.</code></p>
 
-<p><img src="https://glinkssite.files.wordpress.com/2017/01/new-web-notification.png" alt="new-web-notification" /></p>
+<figure>
+    <img src="/uploads/new-web-notification.png"/> 
+</figure>
+
 
 <p>Once a new Web Notification URL record is created you should be able to open the Web Notification solution again and see the configuration screen below to continue.</p>
 
-<p><img src="https://glinkssite.files.wordpress.com/2017/01/web-notification-solution-post-url.png" alt="web-notification-solution-post-url" /></p>
+<figure>
+    <img src="/uploads/web-notification-solution-post-url.png"/> 
+</figure>
+
 
 <p>This shows the notifications already set but basically you select the entities on the left you need and then adding them to the right with the arrow. After you have added the Send Notifications needed clicking Save and Publish will register the plugin steps on the required entities and next time you change one of these entities the plugin will trigger and you will see your changes in the portal.</p>
 

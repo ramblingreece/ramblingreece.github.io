@@ -144,11 +144,12 @@
 
 <h2 id="quick-fix-steps">Quick Fix Steps</h2>
 
-<pre><code>  1. Navigate to Draft Processes view in Settings &gt; Processes.
-  2. Assign all Processes to an enabled System Administrator user.
-  3. Activate all relevant Processes that had been disabled for whatever reason.
-  4. Revel in your ability to bring a CRM instance back to life!
-</code></pre>
+<ol>
+<li>Navigate to Draft Processes view in Settings &gt; Processes.</li>
+<li>Assign all Processes to an enabled System Administrator user.</li>
+<li>Activate all relevant Processes that had been disabled for whatever reason.</li>
+<li>Revel in your ability to bring a CRM instance back to life!</li>
+</ol>
 
 <h2 id="detailed-story">Detailed Story</h2>
 
@@ -158,8 +159,9 @@
 
 <p>First things first, &ldquo;Copy to clipboard&rdquo; eh? Right, click that, what do I get?</p>
 
-<blockquote>Error: Unknown error
-StackTrace:</blockquote>
+<blockquote>
+<p>Error: Unknown error StackTrace:</p>
+</blockquote>
 
 <p>Useful. No. Really.</p>
 
@@ -167,19 +169,30 @@ StackTrace:</blockquote>
 
 <p>At this point I actually gave up and created a whole new trial from scratch and did it all over again with no demo data. However, I was referring back to the previous trial for data and in doing so I kept getting odd errors in different places including the warning below when attempting to view the Work Breakdown Structure of a Project.</p>
 
-<p><img src="https://glinkssite.files.wordpress.com/2017/01/project-work-breakdown-error.png" alt="project-work-breakdown-error" /></p>
+<figure>
+    <img src="/uploads/project-work-breakdown-error.png"/> 
+</figure>
+
 
 <p>Another error popped up somewhere else which mentioned a process not being activated and this got me thinking about an issue I have had before with an Action not being activated. So off to Processes I plod (Settings &gt; Processes) and select the Draft Processes view; since this was a trial I would expect there to be no Draft processes and in fact I originally saw 187! In my re-creation here I actually have only 10 draft but it has the same effect.</p>
 
-<p><img src="https://glinkssite.files.wordpress.com/2017/01/draft-processes.png" alt="Draft Processes.png" /></p>
+<figure>
+    <img src="/uploads/draft-processes.png"/> 
+</figure>
+
 
 <p>First thing I did was to activate the processes but got an Access Error. The system seems to not know who I am all of a sudden, huh?</p>
 
-<p><img src="https://glinkssite.files.wordpress.com/2017/01/activate-process-access-error.png" alt="Activate Process Access Error.png" /></p>
+<figure>
+    <img src="/uploads/activate-process-access-error.png"/> 
+</figure>
+
 
 <p>This error is actually to do with the Owner of the process rather than the current user logged in. That is a key point to remember about workflow, they usually operate in the context of the owner and so you need to be careful with ownership of workflow.</p>
 
+<blockquote>
 <p><em>It is always recommended to set the owner of workflows to a service account that is relevant to that process as if it happens to be a normal CRM user then when that person leaves the company and their account is disabled, bang, all processes stop working.</em></p>
+</blockquote>
 
 <p>To fix this annoying issue, select all draft processes that are owned by the wrong user (in this case &mdash; &mdash; was the user) and assign to a relevant System Administrator account; for this I have assigned them to me.</p>
 
@@ -187,7 +200,10 @@ StackTrace:</blockquote>
 
 <p>Once all of the processes have been re-activated you should be good to go with Projects and the Schedule Board again, hope this has been helpful.</p>
 
-<p><img src="https://glinkssite.files.wordpress.com/2017/01/schedule-board.png" alt="Schedule Board.png" /></p>
+<figure>
+    <img src="/uploads/schedule-board.png"/> 
+</figure>
+
 
         </div>
     </section>

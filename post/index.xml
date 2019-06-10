@@ -42,6 +42,16 @@ A few years ago I remember coming across a great blog post from Scott Durow (@sc
     </item>
     
     <item>
+      <title>Fantastic Portals Error Logs and Where to Find Them</title>
+      <link>https://ramblingreece.co.uk/2018/02/28/fantastic-portals-error-logs-and-where-to-find-them/</link>
+      <pubDate>Wed, 28 Feb 2018 15:40:40 +0000</pubDate>
+      
+      <guid>https://ramblingreece.co.uk/2018/02/28/fantastic-portals-error-logs-and-where-to-find-them/</guid>
+      <description>If you have worked with Portals in Dynamics 365 then you will have come across the generic error and very unhelpful text below. The latest version allows you to access this log now but where is it and why can I not find this on the Microsoft Docs site? Read on to find out more.
+We’re sorry, but something went wrong. Please try again, and if this persists, contact the website administrator.</description>
+    </item>
+    
+    <item>
       <title>Dynamics 365 Portals - Useful Resources</title>
       <link>https://ramblingreece.co.uk/2017/02/18/dynamics-365-portals-useful-resources/</link>
       <pubDate>Sat, 18 Feb 2017 18:46:30 +0000</pubDate>
@@ -85,15 +95,6 @@ This post attempts to capture all of the useful references I have found to date 
       
       <guid>https://ramblingreece.co.uk/2016/12/15/dynamics-365-has-a-site-map-editor/</guid>
       <description>Long has it been a crazy thing that the only way to edit the Site Map has been to export a solution with the SiteMap XML included and then hand edit that to your needs (as in the title image). This pain caused the birth of a number of tools to make this process easier (XrmToolBox being the most popular) but nothing officially released from Microsoft to support their own product; that is, until now.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://ramblingreece.co.uk/1/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ramblingreece.co.uk/1/01/</guid>
-      <description></description>
     </item>
     
   </channel>

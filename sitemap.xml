@@ -32,12 +32,13 @@
   </url>
   
   <url>
-    <loc>https://ramblingreece.co.uk/</loc>
+    <loc>https://ramblingreece.co.uk/post/</loc>
     <lastmod>2018-09-19T16:33:52+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ramblingreece.co.uk/post/</loc>
+    <loc>https://ramblingreece.co.uk/</loc>
     <lastmod>2018-09-19T16:33:52+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -110,6 +111,11 @@
     <loc>https://ramblingreece.co.uk/tags/tips/</loc>
     <lastmod>2018-05-20T18:40:40+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ramblingreece.co.uk/2018/02/28/fantastic-portals-error-logs-and-where-to-find-them/</loc>
+    <lastmod>2018-02-28T15:40:40+00:00</lastmod>
   </url>
   
   <url>
@@ -223,12 +229,6 @@
   
   <url>
     <loc>https://ramblingreece.co.uk/about/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ramblingreece.co.uk/1/01/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
