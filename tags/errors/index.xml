@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Errors on Rambling Reece</title>
@@ -18,7 +18,7 @@
       <pubDate>Fri, 06 Jan 2017 16:39:05 +0000</pubDate>
       
       <guid>https://ramblingreece.co.uk/2017/01/06/field-services-schedule-board-unknown-error/</guid>
-      <description>Error messages can be useful but some are downright useless! This one is an example of the latter but a more useful error later led me to the solution. If you have seen the error above on loading the Schedule Board then read on for a possible solution.I tend to ramble so below I have listed the steps I took to fix the problem and below that is the full story.</description>
+      <description>&lt;p&gt;Error messages can be useful but some are downright useless! This one is an example of the latter but a more useful error later led me to the solution. If you have seen the error above on loading the Schedule Board then read on for a possible solution.&lt;/p&gt;</description>
     </item>
     
   </channel>

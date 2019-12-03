@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>development on Rambling Reece</title>
@@ -18,8 +18,7 @@
       <pubDate>Wed, 19 Sep 2018 16:33:52 +0000</pubDate>
       
       <guid>https://ramblingreece.co.uk/2018/09/19/entity-form-custom-validation-on-submit-button/</guid>
-      <description>The documentation for Dynamics Portals currently only has an example for adding custom validation to the submit button on a form if you are adding that to a step in a Web Form, but what if you want to add validation to the button on an Entity Form? Read on to find out more.
-Recently I had a requirement to modify some field values in a portal entity form at the point the submit button is clicked and I had come across the javascript to do this before so I dutifully plodded along to https://docs.</description>
+      <description>&lt;p&gt;The documentation for Dynamics Portals currently only has an example for adding custom validation to the submit button on a form if you are adding that to a step in a Web Form, but what if you want to add validation to the button on an Entity Form? Read on to find out more.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,8 +27,7 @@ Recently I had a requirement to modify some field values in a portal entity form
       <pubDate>Wed, 30 May 2018 14:28:16 +0000</pubDate>
       
       <guid>https://ramblingreece.co.uk/2018/05/30/fiddler-xrmtoolbox-vs-code-and-vuejs-a-fantastic-combination/</guid>
-      <description>In this post I will show, very quickly, a set of tools and process that is working well for me while developing client side apps for Dynamics 365. This is just one way but some of the tools and how I use them should be something you can take away and implement in whatever you do for you development of Web Resources within the CRM.
-A few years ago I remember coming across a great blog post from Scott Durow (@scottdurow), he of SparkleXRM and Ribbon Workbench fame, which introduced me to Fiddler2 autoresponders for replacing CRM web resources on the server with local development copies to vastly improve the development process and speed.</description>
+      <description>&lt;p&gt;In this post I will show, very quickly, a set of tools and process that is working well for me while developing client side apps for Dynamics 365. This is just one way but some of the tools and how I use them should be something you can take away and implement in whatever you do for you development of Web Resources within the CRM.&lt;/p&gt;</description>
     </item>
     
   </channel>

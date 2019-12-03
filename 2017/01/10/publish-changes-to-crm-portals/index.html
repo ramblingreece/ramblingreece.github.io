@@ -9,8 +9,8 @@
 <meta property="og:description" content="A new feature of Dynamics 365 is the ability to add a Web Portal for access to the CRM by way of a web front end. This is a modified form of the ADX Studio Portals project bought by Microsoft previously and can be enabled directly in the Office 365 admin portal and configured via the CRM and website (with the correct user role assigned).It is a great new addition and has huge potential as a useful addition to most CRM implementations." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ramblingreece.co.uk/2017/01/10/publish-changes-to-crm-portals/" />
-<meta property="article:published_time" content="2017-01-10T17:49:19&#43;00:00"/>
-<meta property="article:modified_time" content="2017-01-10T17:49:19&#43;00:00"/>
+<meta property="article:published_time" content="2017-01-10T17:49:19+00:00" />
+<meta property="article:modified_time" content="2019-12-03T19:13:09+00:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Publish changes to CRM Portals"/>
@@ -25,13 +25,24 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://ramblingreece.co.uk/css/style.css" rel="stylesheet">
+    <link href="https://ramblingreece.co.ukcss/style.css" rel="stylesheet">
 
     
 
     
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-153804780-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
-    
+
+    <meta />
   </head>
   <body>
     
@@ -63,7 +74,7 @@
         
             
 <li>
-    <a class="black-text" href="/about/">About Hugo</a>
+    <a class="black-text" href="/about/">About</a>
 </li>
 
         
@@ -94,7 +105,7 @@
         
             
 <li>
-    <a class="black-text" href="/about/">About Hugo</a>
+    <a class="black-text" href="/about/">About</a>
 </li>
 
         
@@ -129,27 +140,19 @@
 
 <p class="article-meta">
     <div class="article-meta-container">
-        <div class="article-meta-author-name">Reece</div>
         <div class="article-meta-description"></div>
     </div>
     <span class="article-meta-published-at grey-text text-darken-1">Jan 10, 2017</span>
 </p>
         </div>
         <div class="col s12 m8 offset-m2 l6">
-            
-
-<p>A new feature of Dynamics 365 is the ability to add a Web Portal for access to the CRM by way of a web front end. This is a modified form of the ADX Studio Portals project bought by Microsoft previously and can be enabled directly in the Office 365 admin portal and configured via the CRM and website (with the correct user role assigned).<!-- more --></p>
-
+            <p>A new feature of Dynamics 365 is the ability to add a Web Portal for access to the CRM by way of a web front end. This is a modified form of the ADX Studio Portals project bought by Microsoft previously and can be enabled directly in the Office 365 admin portal and configured via the CRM and website (with the correct user role assigned).<!-- raw HTML omitted --></p>
 <p>It is a great new addition and has huge potential as a useful addition to most CRM implementations. In this article I am discussing the issues I had in trying to reflect the changes I made in the CRM to the portal front end, the only way I seemed to be able to get the changes to &ldquo;Publish&rdquo; were by turning the Web Application off and then on again. This is not a good workflow for any sane development/customisation.</p>
-
-<p>In trying to find more details I stumbled across the answer from Patrick Dykema on the Dynamics CRM Forums (<a href="https://community.dynamics.com/crm/f/117/p/210500/599644">https://community.dynamics.com/crm/f/117/p/210500/599644</a>). This article is based on the steps he outlines with a little more detail, so thanks go to Patrick for this!</p>
-
+<p>In trying to find more details I stumbled across the answer from Patrick Dykema on the Dynamics CRM Forums (<a href="https://community.dynamics.com/crm/f/117/p/210500/599644)">https://community.dynamics.com/crm/f/117/p/210500/599644)</a>. This article is based on the steps he outlines with a little more detail, so thanks go to Patrick for this!</p>
 <blockquote>
 <p><strong>Update 18/02/2017</strong> - This article is still relevant, though it is not recommended by Microsoft any longer. The new process to update changes is actually by enabling Change Tracking on the relevant entity as noted in this support blog article - <a href="https://community.dynamics.com/enterprise/b/dynamics365portalssupport/archive/2017/01/19/portal-troubleshooting-part-one-stale-data-and-bad-requests">Portal Troubleshooting, Part One: Stale Data and Bad Requests</a>.</p>
 </blockquote>
-
 <h2 id="quick-fix-steps">Quick Fix Steps</h2>
-
 <ol>
 <li>Open the CRM solution called Web Notification (Settings &gt; Solutions).</li>
 <li>Create a Web Notification URL record if required. This should have the URL of your portal (<a href="https://portalname.microsoftcrmportals.com">https://portalname.microsoftcrmportals.com</a> for Microsoft hosted) with the path /WebNotification.axd added; for example <a href="https://portalname.microsoftcrmportals.com/WebNotification.axd">https://portalname.microsoftcrmportals.com/WebNotification.axd</a>.</li>
@@ -157,13 +160,9 @@
 <li>Select any entity you want to force a refresh, during Portal development it is easiest to select any entity that is related to ADX/Portals functionality; basically anything beginning Web and the Entity List and Entity Form.</li>
 <li>Removal of these notifications can be actioned by performing these same steps in reverse.</li>
 </ol>
-
-<h2 id="detailed-steps">Detailed Steps</h2>
-
-<p>The process that will be outlined here is enabling plugins in the CRM to use a Web Notification mechanism to communicate with the hosted website forcing it to invalidate the stored data in the cache and therefore the next time you load the portal page the latest changes are requested from the CRM rather than the cache. There is an article on the ADX Studios Support site that covers this but the URL seems to be different to the one used and I think it is because the documentation is out of date (<a href="https://community.adxstudio.com/products/adxstudio-portals/documentation/developers-guide/cache/web-notifications/">https://community.adxstudio.com/products/adxstudio-portals/documentation/developers-guide/cache/web-notifications/</a>).</p>
-
+<h2 id="detailedsteps">Detailed Steps</h2>
+<p>The process that will be outlined here is enabling plugins in the CRM to use a Web Notification mechanism to communicate with the hosted website forcing it to invalidate the stored data in the cache and therefore the next time you load the portal page the latest changes are requested from the CRM rather than the cache. There is an article on the ADX Studios Support site that covers this but the URL seems to be different to the one used and I think it is because the documentation is out of date (<a href="https://community.adxstudio.com/products/adxstudio-portals/documentation/developers-guide/cache/web-notifications/)">https://community.adxstudio.com/products/adxstudio-portals/documentation/developers-guide/cache/web-notifications/)</a>.</p>
 <p>There is an inherent cost in performance to enabling this as the plugin will fire for all operations on all entities selected in this process. Exactly how much of a cost is not clear but it is worth mentioning and noting that only entities that need to provide the latest data in the portal and are likely to change in the CRM regularly too. For the purposes of this article we will enable relevant ADX entities to update the portal as we make changes.</p>
-
 <p>To begin we need to open the Web Notification solution in the CRM, this is added by default when installing a CRM Portal.
 <figure>
     <img src="/uploads/webnotification-solution-pre-url.png"
@@ -172,32 +171,150 @@
         </figcaption>
 </figure>
 </p>
-
 <p>As above it is likely you will not already have a Web Notification URL record in the system so follow the link to add a new record. This is simply a new entity record so create a new record as normal.</p>
-
 <p>The Name can be anything but the URL must be the default URL of the portal with the path /WebNotification.axd added to the end. An example URL would be: <code>https://myportalname.com/WebNotification.axd.</code></p>
-
 <figure>
     <img src="/uploads/new-web-notification.png"/> 
 </figure>
 
-
 <p>Once a new Web Notification URL record is created you should be able to open the Web Notification solution again and see the configuration screen below to continue.</p>
-
 <figure>
     <img src="/uploads/web-notification-solution-post-url.png"/> 
 </figure>
 
-
 <p>This shows the notifications already set but basically you select the entities on the left you need and then adding them to the right with the arrow. After you have added the Send Notifications needed clicking Save and Publish will register the plugin steps on the required entities and next time you change one of these entities the plugin will trigger and you will see your changes in the portal.</p>
-
 <p>Happy Portal Publishing!</p>
-
 <h3 id="quick-note">Quick Note</h3>
-
 <p>This does not mean that your changes to web pages made in the CRM will instantly reflect in the front end portal, the plugin is an asynchronous plugin and therefore can take a few seconds (or minutes) to kick in. You can see this working if you enable Plugin Tracing via the Customization tab of the System Settings then looking at the trace logs under Settings.</p>
 
         </div>
+        <div>
+
+
+<a href="https://twitter.com/intent/tweet?url=https%3a%2f%2framblingreece.co.uk%2f2017%2f01%2f10%2fpublish-changes-to-crm-portals%2f&text=Publish%20changes%20to%20CRM%20Portals @ramblingreece&hashtags=">Discuss on Twitter <svg style="height: 20px; margin-top: 8px;" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"/></svg></a>
+</div>
+        <div>
+
+
+<style>
+    #share-buttons {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    #share-buttons:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    #share-buttons>div {
+        position: relative;
+        text-align: left;
+        height: 36px;
+        width: 32px;
+        float: left;
+        text-align: center;
+    }
+
+    #share-buttons>div>svg {
+        height: 16px;
+        fill: #d5d5d5;
+        margin-top: 10px;
+    }
+
+    #share-buttons>div:hover {
+        cursor: pointer;
+    }
+
+    #share-buttons>div.facebook:hover>svg {
+        fill: #3B5998;
+    }
+
+    #share-buttons>div.twitter:hover>svg {
+        fill: #55ACEE;
+    }
+
+    #share-buttons>div.linkedin:hover>svg {
+        fill: #0077b5;
+    }
+
+    #share-buttons>div.pinterest:hover>svg {
+        fill: #CB2027;
+    }
+
+    #share-buttons>div.gplus:hover>svg {
+        fill: #dd4b39;
+    }
+
+    #share-buttons>div.mail:hover>svg {
+        fill: #7D7D7D;
+    }
+
+    #share-buttons>div.instagram:hover>svg {
+        fill: #C73B92;
+    }
+
+    #share-buttons>div.facebook>svg {
+        height: 18px;
+        margin-top: 9px;
+    }
+
+    #share-buttons>div.twitter>svg {
+        height: 20px;
+        margin-top: 8px;
+    }
+
+    #share-buttons>div.linkedin>svg {
+        height: 19px;
+        margin-top: 7px;
+    }
+
+    #share-buttons>div.pinterest>svg {
+        height: 20px;
+        margin-top: 9px;
+    }
+
+    #share-buttons>div.gplus>svg {
+        height: 17px;
+        margin-top: 9px;
+        position: relative;
+        left: 1px;
+    }
+
+    #share-buttons>div.mail>svg {
+        height: 14px;
+        margin-top: 11px;
+    }
+</style>
+
+<span style="color: silver;">Share on: </span>
+<div id="share-buttons">
+    <div class="facebook" title="Share this on Facebook"
+        onclick="window.open('http://www.facebook.com/share.php?u=https:\/\/ramblingreece.co.uk\/2017\/01\/10\/publish-changes-to-crm-portals\/');"><svg viewBox="0 0 1792 1792"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z" />
+            </svg></div>
+    <div class="twitter" title="Share this on Twitter"
+        onclick="window.open('http://twitter.com/home?status=https:\/\/ramblingreece.co.uk\/2017\/01\/10\/publish-changes-to-crm-portals\/');"><svg viewBox="0 0 1792 1792"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z" />
+            </svg></div>
+    <div class="linkedin" title="Share this on Linkedin"
+        onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=https:\/\/ramblingreece.co.uk\/2017\/01\/10\/publish-changes-to-crm-portals\/&title=&summary=&source=');">
+        <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z" />
+            </svg></div>
+    
+    <div class="mail" title="Share this through Email" onclick="window.open('mailto:?&body=https:\/\/ramblingreece.co.uk\/2017\/01\/10\/publish-changes-to-crm-portals\/');"><svg
+            viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z" />
+            </svg></div>
+</div></div>
     </section>
 </article>
 
@@ -214,55 +331,11 @@
 
     
     
-    <div class="col s12 l6">
-        <h5 class="black-text">Footer Content</h5>
-<p class="grey-text text-darken-4">You can use rows and columns here to organize your footer content.</p>
+    <div class="col s12 l12">
+        
+
     </div>
 
-    
-        <div class="col s12 l4 offset-l2">
-            <div class="row">
-                
-                
-                
-                    <div class="col s6 clear-padding">
-                        
-
-<h5 class="black-text">Services</h5>
-<ul>
-    
-    <li>
-        <a class="grey-text text-darken-4" href="/">Home</a>
-    </li>
-    
-    <li>
-        <a class="grey-text text-darken-4" href="/about/">About</a>
-    </li>
-    
-</ul>
-
-                    </div>
-                
-                    <div class="col s6 clear-padding">
-                        
-
-<h5 class="black-text">Links</h5>
-<ul>
-    
-    <li>
-        <a class="grey-text text-darken-4" href="/#">Service 1</a>
-    </li>
-    
-    <li>
-        <a class="grey-text text-darken-4" href="/#">Service 2</a>
-    </li>
-    
-</ul>
-
-                    </div>
-                
-            </div>
-        </div>
     
 </div>
 
@@ -285,6 +358,6 @@
     
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://ramblingreece.co.uk/js/script.js"></script>
+    <script src="https://ramblingreece.co.ukjs/script.js"></script>
   </body>
 </html>

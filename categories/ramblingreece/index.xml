@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RamblingReece on Rambling Reece</title>
@@ -18,7 +18,7 @@
       <pubDate>Tue, 20 Dec 2016 14:41:29 +0000</pubDate>
       
       <guid>https://ramblingreece.co.uk/2016/12/20/ecmascript-2015-es6javascript-ish-is-here-time-to-use-it/</guid>
-      <description>It&amp;rsquo;s true, the title of this post is a little odd. But then, the history of JavaScript is too. Recently I have been trying to get a better understanding of the web technologies out there and how I can use them within the CRM or standalone projects. This has inevitably led me to the realisation that I am woefully out of date.I will not discuss the history of JavaScript and ECMAScript here as you can find out more at the linked wikipedia articles; the point is that ECMAScript is the standard that JavaScript tracks.</description>
+      <description>&lt;p&gt;It&#39;s true, the title of this post is a little odd. But then, the history of JavaScript is too. Recently I have been trying to get a better understanding of the web technologies out there and how I can use them within the CRM or standalone projects. This has inevitably led me to the realisation that I am woefully out of date.&lt;/p&gt;</description>
     </item>
     
   </channel>

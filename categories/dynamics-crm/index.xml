@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dynamics CRM on Rambling Reece</title>
@@ -18,8 +18,7 @@
       <pubDate>Wed, 19 Sep 2018 16:33:52 +0000</pubDate>
       
       <guid>https://ramblingreece.co.uk/2018/09/19/entity-form-custom-validation-on-submit-button/</guid>
-      <description>The documentation for Dynamics Portals currently only has an example for adding custom validation to the submit button on a form if you are adding that to a step in a Web Form, but what if you want to add validation to the button on an Entity Form? Read on to find out more.
-Recently I had a requirement to modify some field values in a portal entity form at the point the submit button is clicked and I had come across the javascript to do this before so I dutifully plodded along to https://docs.</description>
+      <description>&lt;p&gt;The documentation for Dynamics Portals currently only has an example for adding custom validation to the submit button on a form if you are adding that to a step in a Web Form, but what if you want to add validation to the button on an Entity Form? Read on to find out more.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,8 +27,7 @@ Recently I had a requirement to modify some field values in a portal entity form
       <pubDate>Wed, 30 May 2018 14:28:16 +0000</pubDate>
       
       <guid>https://ramblingreece.co.uk/2018/05/30/fiddler-xrmtoolbox-vs-code-and-vuejs-a-fantastic-combination/</guid>
-      <description>In this post I will show, very quickly, a set of tools and process that is working well for me while developing client side apps for Dynamics 365. This is just one way but some of the tools and how I use them should be something you can take away and implement in whatever you do for you development of Web Resources within the CRM.
-A few years ago I remember coming across a great blog post from Scott Durow (@scottdurow), he of SparkleXRM and Ribbon Workbench fame, which introduced me to Fiddler2 autoresponders for replacing CRM web resources on the server with local development copies to vastly improve the development process and speed.</description>
+      <description>&lt;p&gt;In this post I will show, very quickly, a set of tools and process that is working well for me while developing client side apps for Dynamics 365. This is just one way but some of the tools and how I use them should be something you can take away and implement in whatever you do for you development of Web Resources within the CRM.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -38,7 +36,7 @@ A few years ago I remember coming across a great blog post from Scott Durow (@sc
       <pubDate>Sun, 20 May 2018 18:40:40 +0000</pubDate>
       
       <guid>https://ramblingreece.co.uk/2018/05/20/hidden-does-not-mean-secure/</guid>
-      <description>If you have ever had to customise an entity form in Dynamics 365 then you will likely have hidden a field, marked a field as business required and possibly even made a field read-only. Did you know however that all of these can be reverse by most users? Just because the field is not visible on the form does not mean the user cannot find the value or edit it.</description>
+      <description>&lt;p&gt;If you have ever had to customise an entity form in Dynamics 365 then you will likely have hidden a field, marked a field as business required and possibly even made a field read-only. Did you know however that all of these can be reverse by most users? Just because the field is not visible on the form does not mean the user cannot find the value or edit it.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -48,7 +46,7 @@ A few years ago I remember coming across a great blog post from Scott Durow (@sc
       
       <guid>https://ramblingreece.co.uk/2018/02/28/fantastic-portals-error-logs-and-where-to-find-them/</guid>
       <description>If you have worked with Portals in Dynamics 365 then you will have come across the generic error and very unhelpful text below. The latest version allows you to access this log now but where is it and why can I not find this on the Microsoft Docs site? Read on to find out more.
-We’re sorry, but something went wrong. Please try again, and if this persists, contact the website administrator.</description>
+Updates  1st of March 2018: Looks like the page exists in the en-gb locale but is not available in the search: https://docs.</description>
     </item>
     
     <item>
@@ -76,7 +74,7 @@ This post attempts to capture all of the useful references I have found to date 
       <pubDate>Fri, 06 Jan 2017 16:39:05 +0000</pubDate>
       
       <guid>https://ramblingreece.co.uk/2017/01/06/field-services-schedule-board-unknown-error/</guid>
-      <description>Error messages can be useful but some are downright useless! This one is an example of the latter but a more useful error later led me to the solution. If you have seen the error above on loading the Schedule Board then read on for a possible solution.I tend to ramble so below I have listed the steps I took to fix the problem and below that is the full story.</description>
+      <description>&lt;p&gt;Error messages can be useful but some are downright useless! This one is an example of the latter but a more useful error later led me to the solution. If you have seen the error above on loading the Schedule Board then read on for a possible solution.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -85,7 +83,7 @@ This post attempts to capture all of the useful references I have found to date 
       <pubDate>Tue, 20 Dec 2016 14:41:29 +0000</pubDate>
       
       <guid>https://ramblingreece.co.uk/2016/12/20/ecmascript-2015-es6javascript-ish-is-here-time-to-use-it/</guid>
-      <description>It&amp;rsquo;s true, the title of this post is a little odd. But then, the history of JavaScript is too. Recently I have been trying to get a better understanding of the web technologies out there and how I can use them within the CRM or standalone projects. This has inevitably led me to the realisation that I am woefully out of date.I will not discuss the history of JavaScript and ECMAScript here as you can find out more at the linked wikipedia articles; the point is that ECMAScript is the standard that JavaScript tracks.</description>
+      <description>&lt;p&gt;It&#39;s true, the title of this post is a little odd. But then, the history of JavaScript is too. Recently I have been trying to get a better understanding of the web technologies out there and how I can use them within the CRM or standalone projects. This has inevitably led me to the realisation that I am woefully out of date.&lt;/p&gt;</description>
     </item>
     
     <item>
